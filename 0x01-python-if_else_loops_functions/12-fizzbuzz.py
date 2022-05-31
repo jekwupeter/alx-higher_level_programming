@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def fizzbuzz():
     """
     fizzbuzz -custom print number from 1 to 100
