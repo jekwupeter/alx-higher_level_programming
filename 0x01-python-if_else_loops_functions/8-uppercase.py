@@ -9,4 +9,3 @@ def uppercase(str):
             print("{:s}".format(chr(ord(i) - 32)), end="")
         else:
             print("{:s}".format(i), end="")
-    print()
