@@ -2,5 +2,5 @@
 for i in range(10):
     for j in range(10):
         if i < j and i + j != 17:
-            print(f"{i:d}{j:d}", end=", ")
-print(f"{i - 1}{j}")
+            print("{:d}{:d}".format(i, j), end=", ")
+print(f"{:d}{:d}".format(i - 1, j))
