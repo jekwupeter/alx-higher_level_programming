@@ -7,7 +7,7 @@ def remove_char_at(str, n):
     Return: modified copy of string
     """
     if n > -1:
-        str_copy = str[:n] + str[n + 1: ]
+        str_copy = str[:n] + str[n + 1:]
     else:
         return(str)
     return (str_copy)
