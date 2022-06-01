@@ -6,5 +6,6 @@ def remove_char_at(str, n):
     @n: index positon of char to be removed
     Return: modified copy of string
     """
-    str_copy = str[:n] + str[n + 1: ]
+    if n > -1:
+        str_copy = str[:n] + str[n + 1: ]
     return (str_copy)
