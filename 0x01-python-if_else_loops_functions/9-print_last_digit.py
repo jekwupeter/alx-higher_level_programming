@@ -6,5 +6,6 @@ def print_last_digit(number):
     Return: value of the last digit
     """
     for i in str(number):
-        None
+        pass
+    print(int(i))
     return (int(i))
