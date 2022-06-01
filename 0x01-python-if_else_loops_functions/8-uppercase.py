@@ -4,8 +4,10 @@ def uppercase(str):
     uppercase - prints a string in uppercase
     @str - input string
     """
-    for i in str:
-        if ord(i) >= 97 and ord(i) <= 122:
-            i = chr(ord(i) - 32)
-        print("{:s}".format(i), end="")
-    print()
+    for i, char in enumerate(str):
+        if ord(char) >= 97 and ord(char) <= 122:
+            char = chr(ord(char) - 32)
+        if i != len(str) - 1:
+            print("{:s}".format(char), end="")
+        else:
+            print("{:s}".format(char))
