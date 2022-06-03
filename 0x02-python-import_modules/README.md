@@ -1,0 +1,5 @@
+- Learning about import
+- modules
+- built-in fucntions
+- command line arguments
+- How to prevent code in script from been executed when imported
