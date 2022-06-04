@@ -7,7 +7,6 @@ if __name__ == "__main__":
         print("{:d}".format(sum))
     else:
         for i in range(len(sys.argv)):
-            arg_list.append(int(sys.argv[i]))
             if i != len(sys.argv):
                 arg_list.append(int(sys.argv[i + 1]))
                 print("{:d}".format(sum(arg_list)))
