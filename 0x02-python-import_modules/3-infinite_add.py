@@ -10,4 +10,4 @@ if __name__ == "__main__":
             if i != len(sys.argv):
                 arg_list.append(int(sys.argv[i + 1]))
                 print(arg_list)
-                print(f"{sum(arg_list)}"
+                print(f"{sum(arg_list)}")
