@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    sum = 0
+    infinite_sum = 0
     arg_list = []
     if len(sys.argv) == 1:
-        print("{:d}".format(sum))
+        print("{:d}".format(infinite_sum))
     else:
         for i in range((len(sys.argv) - 1)):
                 arg_list.append(int(sys.argv[i + 1]))
-        print(f"{sum(arg_list)}")
+        infinite_su = sum(arg_list)
+        print(f"{infinite_sum}")
