@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+
     infinite_sum = 0
     arg_list = []
-
     if len(sys.argv) == 1:
         print("{:d}".format(infinite_sum))
     else:
