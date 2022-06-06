@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def replace_in_list(my_list, element):
+def replace_in_list(my_list, idx, element):
     """
     replace_in_list - repalces n element of a list at an index
     @idx: index of element to replace
@@ -7,8 +7,10 @@ def replace_in_list(my_list, element):
     """
     if idx < 0:
         return my_list
+
     elif idx > len(my_list):
         return my_list
+
     else:
         for id, item in enumerate(my_list):
             if id == idx:
