@@ -5,6 +5,6 @@ def multiple_returns(sentence):
     @sentence: Input string
     """
     if instance(sentence, string):
-        buffer = [len(sentence), sentence[0]]
+        buffer = [len(sentence), sentence[0]] if len(sentence) != 0 else [len(sentence), None] 
         buffer = tuple(buffer)
-        return (buffer)
+        return buffer
