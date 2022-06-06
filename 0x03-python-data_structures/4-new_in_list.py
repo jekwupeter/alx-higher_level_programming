@@ -5,14 +5,13 @@ def new_in_list(my_list, idx, element):
     @idx: index of replacement element
     @element: repalcement element
     """
-    if isinstance(my_list, list):
-        list_copy = my_list[:]
-        if idx < 0:
-            return list_copy
-        elif idx > len(my_list):
-            return list_copy
-        else:
-            for id, item in enumerate(list_copy):
-                if idx == id:
-                    list_copy[id] = element
-                    return list_copy
+    list_copy = my_list[:]
+    if idx < 0:
+        return list_copy
+    elif idx > len(my_list):
+        return list_copy
+    else:
+        for id, item in enumerate(list_copy):
+            if idx == id:
+                list_copy[id] = element
+                return list_copy
