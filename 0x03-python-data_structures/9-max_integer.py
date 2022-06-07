@@ -10,5 +10,5 @@ def max_integer(my_list=[]):
 
     temp = 0
     for x in my_list:
-        temp = x if x > temp
+        temp = x if x > temp else temp
     return temp
