@@ -5,9 +5,8 @@ def print_matrix_integer(matrix=[[]]):
     @matrix: input matrix
     """
     for inner_list in matrix:
-        for i in inner_list:
-            if i < len(inner_list) - 1:
-                print("{:d}".format(element), end=" ")
-            else:
-                print("{:d}".format(element), end="")
+        for i, element in enumerate(inner_list):
+            print("{:d}".format(element), end="")
+            if i != (len(inner_list) - 1):
+                print(" ", end="")
         print("")
