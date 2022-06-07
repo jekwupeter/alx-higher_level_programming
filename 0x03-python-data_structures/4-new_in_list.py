@@ -8,7 +8,7 @@ def new_in_list(my_list, idx, element):
     list_copy = my_list[:]
     if idx < 0:
         return list_copy
-    elif idx > len(my_list):
+    elif idx >= len(my_list):
         return list_copy
     else:
         for id, item in enumerate(list_copy):
