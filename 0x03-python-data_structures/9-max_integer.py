@@ -8,7 +8,7 @@ def max_integer(my_list=[]):
     if len(my_list) == 0:
         return None
 
-    temp = 0
+    temp = -9999
     for x in my_list:
         temp = x if x > temp else temp
     return temp
