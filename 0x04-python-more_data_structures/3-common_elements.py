@@ -6,5 +6,5 @@ def common_elements(set_1, set_2):
     @set_2: second input set
     Return: set_1 INTERSECT set_2
     """
-    union_set = {x for x in set_1 if x in set_2}
-    return union_set
+    intersect_set = {x for x in set_1 if x in set_2}
+    return intersect_set
