@@ -1,0 +1,5 @@
+- Sets
+- Lists
+- Dictronaries
+- lambda function
+- map, reduce, and filter functions
