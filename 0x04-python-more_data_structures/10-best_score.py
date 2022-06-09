@@ -7,6 +7,7 @@ def best_score(a_dictionary):
     """
     if a_dictionary == None or len(a_dictionary) == 0:
         return None
+
     largest_value = [-9999, None]
     for k, v in a_dictionary.items():
         if int(v) > largest_value[0]:
