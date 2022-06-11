@@ -6,7 +6,7 @@ def weight_average(my_list=[]):
     Return: weighted_average
     """
     if my_list == None or len(my_list) == 0:
-        return None
+        return 0
 
     result = 0
     last_item = []
