@@ -10,9 +10,8 @@ def safe_print_integer(value):
     """
     checker = False
     try:
-        buffer = int(value)
-        print("{:d}".format(buffer))
+        print("{:d}".format(value))
         checker = True
-    except Exception:
+    except ValueError:
         pass
     return checker
