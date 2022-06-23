@@ -8,7 +8,7 @@ class Square:
         Args:
             size (int): size of new sqaure
         """
-        if not isinstance(size, size):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
