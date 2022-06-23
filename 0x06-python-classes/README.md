@@ -1,0 +1,15 @@
+- OOP
+- Class, object and instance
+- attribute
+- public, protected and private attributes
+- self
+- method
+- __init__
+- Data abstraction, Data Encapsulation, and information hiding
+- properties
+- getters and setters
+- dynamic creation of arbitrary new attributes
+- how to bind attributes
+- __dict__
+- getattr function
+
