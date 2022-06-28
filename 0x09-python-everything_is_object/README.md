@@ -1,0 +1,11 @@
+**EVERYTHIN IS OBJECT**
+- difference between mutable and immutable object
+- difference between class, object or instance
+- References
+- Assignment
+- Alias
+- Variable identity
+- Check if two variables are linked to same object
+- Variable identifier
+- Built-in mutable and immutable types
+- How does python pass variable ot functions?
