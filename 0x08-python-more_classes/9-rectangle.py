@@ -87,7 +87,8 @@ class Rectangle:
 
         else:
             return rect_1
-    
+
+    @classmethod
     def square(cls, size=0):
         """creates a new square model instance
 
@@ -97,4 +98,4 @@ class Rectangle:
         Returns:
             a retangle with width == height == size
         """
-        return (Rectangle(size, size))
+        return (cls(size, size))
