@@ -1,0 +1,11 @@
+- OOP
+- class
+- Object, attributes, and instances
+- public, protected and private attributes
+- methods and self
+- special methods
+- Data abstraction, data encapsulation, properties
+- getters and setters
+- object attributes and class attributes
+- class method vs static method
+- getattr
