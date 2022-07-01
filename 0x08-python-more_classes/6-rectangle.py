@@ -5,8 +5,8 @@ class Rectangle:
     number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Instatiation of attibutes"""
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     @property
@@ -17,9 +17,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """sets the width propety"""
-        if not isinstance(self.__width, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if self.__width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -28,12 +28,12 @@ class Rectangle:
         """height getter property"""
         return(self.__height)
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """sets the height propety"""
-        if not isinstance(self.__height, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if self.__height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
