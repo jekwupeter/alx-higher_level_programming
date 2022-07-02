@@ -46,3 +46,11 @@ Check Errors:
     >>> add_integer(4.5, "Hello")
     Traceback (most recent call last):
     TypeError: b must be an integer
+
+    >>> add_integer(4.5, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(4.5, 1009E308)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
