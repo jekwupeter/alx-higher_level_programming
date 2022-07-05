@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """Module defines the function that gets all the attributes and method of an object"""
 def lookup(obj):
     """Returns a list of availbale attribute and method
