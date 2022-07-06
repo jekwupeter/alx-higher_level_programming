@@ -5,7 +5,7 @@ class BaseGeometry():
     def __init__(self):
         """initialization of instance attributes"""
         pass
-    
+
     def area(self):
         """a public method that does nothing"""
-        return raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
