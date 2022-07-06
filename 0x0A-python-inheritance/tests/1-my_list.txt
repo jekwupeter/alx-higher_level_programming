@@ -1,0 +1,40 @@
+==============================
+The "1-my_list.py" module
+==============================
+"""
+A module that defines the test cases for public method of a class
+The module supplies a class Mylist that has single public method
+"""
+Import the function:
+    >>> MyList = __import__('1-my_list').MyList
+
+Check documentation:
+    >>> module_docs = __import__("1-my_list").__doc__
+    >>> print(len(module_docs) > 0)
+    True
+
+    >>> function_docs = __import__("1-my_list").MyList.__doc__
+    >>> print(len(function_docs) > 0)
+    True
+
+Test function:
+    >>> type(MyList)
+    <class 'type'>
+
+    >>> 'print_sorted' in dir(MyList)
+    True
+
+    >>> issubclass(MyList, list)
+    True
+ 
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> all([(type(x) == int) for x in my_list]) == True
+    True
+
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
