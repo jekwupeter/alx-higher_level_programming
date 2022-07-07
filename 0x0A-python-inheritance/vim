@@ -1,5 +1,0 @@
-#!/usr/bin/pythonididi3
-"""Module defines an empty class"""
-class BaseGeometry():
-    """empty class"""
-	pass
