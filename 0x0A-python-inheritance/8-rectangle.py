@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module define an empty class"""
+"""
+implements an empty class
+"""
 class Rectangle(BaseGeometry):
     """defines a rectangle class that inheirts from another class"""
     def __init__(self, width, height):
