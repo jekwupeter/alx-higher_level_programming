@@ -18,14 +18,17 @@ Check documentation:
     True
 
 Test function:
+    >>> bg = BaseGeometry()
+
     >>> type(BaseGeometry)
     <class 'type'>
 
     >>> 'area' and 'integer_validator' in dir(BaseGeometry)
     True
+    
+    >>> bg.integer_validator("Test", 1)
 
 Test errors:
-    >>> bg = BaseGeometry()
     >>> bg.area()
     Traceback (most recent call last):
     Exception: area() is not implemented
@@ -71,5 +74,13 @@ Test errors:
     TypeError: test must be an integer
     
     >>> bg.integer_validator("test", (1,))
+    Traceback (most recent call last):
+    TypeError: test must be an integer
+    
+    >>> bg.integer_validator("test", {1, 2})
+    Traceback (most recent call last):
+    TypeError: test must be an integer
+    
+    >>> bg.integer_validator("test", "1")
     Traceback (most recent call last):
     TypeError: test must be an integer
