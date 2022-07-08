@@ -39,3 +39,35 @@ Test errors:
     ValueError: test must be greater than 0
 
     >>> bg.integer_validator(name="test", value=3)
+    
+    >>> bg.integer_validator(name="test", [])
+    Traceback (most recent call last):
+    SyntaxError: positional argument follows keyword argument
+    
+    >>> bg.integer_validator(name="test", value=[])
+    Traceback (most recent call last):
+    TypeError: test must be an integer
+    
+    >>> bg.integer_validator(name="test", value=None)
+    Traceback (most recent call last):
+    TypeError: Test must be an integer
+    
+    >>> bg.integer_validator(name="test", value=None)
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    
+    >>> bg.integer_validator("test")
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+    
+    >>> bg.integer_validator(name="test", value=(1,2))
+    Traceback (most recent call last):
+    TypeError: Test must be an integer
+    
+    >>> bg.integer_validator(name="test", True)
+    Traceback (most recent call last):
+    TypeError: Test must be an integer
+    
+    >>> bg.integer_validator("test", (1,))
+    Traceback (most recent call last):
+    TypeError: Test must be an integer
