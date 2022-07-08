@@ -16,4 +16,4 @@ class Square(Rectangle):
     
     def __str__(self):
         """defines the string representation of the square class instance"""
-        return ("".join(f"[Square] {self.__size} / {self.__size}"))
+        return ("".join(f"[Square] {self.__size}/{self.__size}"))
