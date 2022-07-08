@@ -50,9 +50,9 @@ Test errors:
     
     >>> bg.integer_validator(name="test", value=None)
     Traceback (most recent call last):
-    TypeError: Test must be an integer
+    TypeError: test must be an integer
     
-    >>> bg.integer_validator(name="test", value=None)
+    >>> bg.integer_validator()
     Traceback (most recent call last):
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
     
@@ -62,12 +62,12 @@ Test errors:
     
     >>> bg.integer_validator(name="test", value=(1,2))
     Traceback (most recent call last):
-    TypeError: Test must be an integer
+    TypeError: test must be an integer
     
     >>> bg.integer_validator(name="test", True)
     Traceback (most recent call last):
-    TypeError: Test must be an integer
+    TypeError: test must be an integer
     
     >>> bg.integer_validator("test", (1,))
     Traceback (most recent call last):
-    TypeError: Test must be an integer
+    TypeError: test must be an integer
