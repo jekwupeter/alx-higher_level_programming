@@ -17,4 +17,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Defines string representation of class"""
-        return "".join(f"[Rectangle] {self.__width} / {self.__height}")
+        return "".join(f"[Rectangle] {self.__width}/{self.__height}")
