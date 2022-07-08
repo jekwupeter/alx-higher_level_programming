@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Module define a square class"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 class Square(Rectangle):
     """defines a rectangle class that inheirts from subclass of another class"""
     def __init__(self, size):
